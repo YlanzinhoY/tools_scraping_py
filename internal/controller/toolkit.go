@@ -6,7 +6,7 @@ import (
 )
 
 func ToolkitController() {
-	var choices = []string{"beautifulsoup", "requests", "schedule", "selenium"}
+	var choices = []string{"beautifulsoup", "requests", "schedule", "selenium", "openpyxl"}
 
 	prompt := &survey.MultiSelect{
 		Message: "Choose a lib",
@@ -30,6 +30,8 @@ func ToolkitController() {
 
 		case "selenium":
 			services.CommandRunner("selenium", "pip3 install selenium")
+		case "openpyxl":
+			services.CommandRunner("openpyxl", "pip3 install openpyxl")
 
 		}
 	}
