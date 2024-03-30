@@ -4,6 +4,7 @@ Copyright © 2024 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
+	"fmt"
 	"os"
 
 	"github.com/spf13/cobra"
@@ -12,15 +13,7 @@ import (
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "tools_scraping_py",
-	Short: "A brief description of your application",
-	Long: `A longer description that spans multiple lines and likely contains
-examples and usage of using your application. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
-	// Uncomment the following line if your bare application
-	// has an action associated with it:
+	Short: "A toolkit for you build-in your apps in python",
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
@@ -30,9 +23,18 @@ func Execute() {
 	if err != nil {
 		os.Exit(1)
 	}
+
 }
 
 func init() {
+
+	fmt.Println(" _____           _       ____                       _               ____        ")
+	fmt.Println("|_   _|__   ___ | |___  / ___|  ___ _ __ __ _ _ __ (_)_ __   __ _  |  _ \\ _   _ ")
+	fmt.Println("  | |/ _ \\ / _ \\| / __| \\___ \\ / __| '__/ _` | '_ \\| | '_ \\ / _` | | |_) | | | |")
+	fmt.Println("  | | (_) | (_) | \\__ \\  ___) | (__| | | (_| | |_) | | | | | (_| | |  __/| |_| |")
+	fmt.Println("  |_|\\___/ \\___/|_|___/ |____/ \\___|_|  \\__,_| .__/|_|_| |_|\\__, | |_|    \\__, |")
+	fmt.Println("                                             |_|            |___/         |___/ ")
+
 	// Here you will define your flags and configuration settings.
 	// Cobra supports persistent flags, which, if defined here,
 	// will be global for your application.
