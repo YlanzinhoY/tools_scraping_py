@@ -6,7 +6,7 @@ import (
 )
 
 func WebApi() {
-	api := util.Choices([]string{"flask", "fastapi", "SQLAlchemy"}, "webkit")
+	api := util.Choices([]string{"flask", "fastapi", "SQLAlchemy", "django", "django_rest_framework"}, "webkit")
 
 	for _, choice := range api {
 		switch choice {
@@ -16,6 +16,10 @@ func WebApi() {
 			services.CommandRunner("Fastapi", "pip3 install fastapi")
 		case "SQLAlchemy":
 			services.CommandRunner("SQLAlchemy", "pip3 install SQLAlchemy")
+		case "django":
+			services.CommandRunner("django", "pip install django")
+		case "django_rest_framework":
+			services.CommandRunner("django_rest_framework", "pip install django djangorestframework")
 		}
 	}
 }

@@ -20,19 +20,18 @@ func ToolkitController() {
 	for _, choice := range choiceType {
 		switch choice {
 		case "beautifulsoup":
-			services.CommandRunner("beautiful soup", "pip3 install beautifulsoup4")
+			services.CommandRunner("beautiful soup", "pip install beautifulsoup4")
 
 		case "requests":
-			services.CommandRunner("requests", "pip3 install requests")
+			services.CommandRunner("requests", "pip install requests")
 
 		case "schedule":
-			services.CommandRunner("requests", "pip3 install schedule")
+			services.CommandRunner("requests", "pip install schedule")
 
 		case "selenium":
-			services.CommandRunner("selenium", "pip3 install selenium")
+			services.CommandRunner("selenium", "pip install selenium")
 		case "openpyxl":
-			services.CommandRunner("openpyxl", "pip3 install openpyxl")
-
+			services.CommandRunner("openpyxl", "pip install openpyxl")
 		}
 	}
 }
