@@ -27,7 +27,6 @@ func ToolkitController() {
 
 		case "schedule":
 			services.CommandRunner("requests", "pip install schedule")
-
 		case "selenium":
 			services.CommandRunner("selenium", "pip install selenium")
 		case "openpyxl":

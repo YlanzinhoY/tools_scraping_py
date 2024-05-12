@@ -20,6 +20,8 @@ func WebApi() {
 			services.CommandRunner("django", "pip install django")
 		case "django_rest_framework":
 			services.CommandRunner("django_rest_framework", "pip install django djangorestframework")
+		case "postgres_driver":
+			services.CommandRunner("postgres", "pip install psycopg-binary")
 		}
 	}
 }
